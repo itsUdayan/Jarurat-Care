@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(./assets/css-pattern-by-magicpattern.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border-radius: 12px;
+    background-color: rgba(28, 26, 92, 0.811);
+    backdrop-filter: blur(5px) saturate(100%);
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(41, 41, 165, 0.79);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin: 0px 15px;
+}
+
+.number{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+
+button{
+    height: auto;
+    width: auto;;
+    margin:20px;
+    border-radius: 5px;
+    font-size: 3rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #2d65f3;
+    color:lightgray;
+    cursor:pointer;
+    box-shadow: rgba(255, 255, 255, 0.231) 1.95px 1.95px 2.6px;
+}
+
+button:hover{
+    background-color: #1050f1;
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.231)0px 5px 15px;
+}
+
+.number h1{
+    font-size: 7rem;
+    color: aliceblue;
+}
+
+.progress-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-line{
+    width: 70%;
+    max-width: 600px;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid #2d65f3;
+    
+}
+
+.progress-bar {
+    height: 25px;
+    width: 0%;
+    background-color: #1050f1;
+    transition: width 0.3s ease-in-out;
+}
